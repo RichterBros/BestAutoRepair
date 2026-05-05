@@ -78,24 +78,21 @@ export default function RootLayout({
                         </div>
                       </div>
                       
-                                             {/* Map Placeholder */}
-                                               <div className="relative">
-                          <a 
-                            href="https://www.google.com/maps?q=4222+NE+Martin+Luther+King+Jr+Blvd,+Portland,+OR+97211" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="block w-full h-48 rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
-                          >
-                            <Image 
-                              src="/map-placeholder.jpg" 
-                              alt="Best Auto Repair Location Map" 
-                              width={800} height={192}
-                              className="w-full h-48 object-cover"
-                            />
-                          </a>
-                          <a 
-                            href="https://www.google.com/maps?q=4222+NE+Martin+Luther+King+Jr+Blvd,+Portland,+OR+97211" 
-                            target="_blank" 
+                        {/* Live Google Maps embed */}
+                        <div className="relative w-full h-48 rounded-lg overflow-hidden">
+                          <iframe
+                            src="https://maps.google.com/maps?q=4222+NE+Martin+Luther+King+Jr+Blvd,+Portland,+OR+97211&hl=en&z=15&output=embed"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Best Auto Repair location map"
+                          />
+                          <a
+                            href="https://www.google.com/maps?q=4222+NE+Martin+Luther+King+Jr+Blvd,+Portland,+OR+97211"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="absolute top-2 left-2 bg-black bg-opacity-75 text-white text-xs px-2 py-1 rounded hover:bg-opacity-90 transition-colors"
                           >
