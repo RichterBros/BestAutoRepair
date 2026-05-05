@@ -48,83 +48,64 @@ export default function Navigation() {
   return (
     <div className="relative w-full">
       <nav
-        className="fixed top-0 left-0 w-full text-white py-4 px-2 flex flex-col items-center min-h-[120px] md:min-h-[140px]"
+        className="fixed top-0 left-0 w-full h-[100px] flex items-end justify-center overflow-visible"
         style={{
           background: "#f4f1ec",
           zIndex: 3000,
         }}
       >
-      {/* Logo and Text Section */}
-      <div className="relative flex items-center justify-center w-full max-w-6xl mx-auto gap-[55px] mb-4 md:mb-0 px-4 md:px-6">
-        {/* Left Navigation Links - Hidden on mobile */}
-        <div className="relative z-10 nav-desktop-gt-950 gap-6">
-          {navLinks.slice(0, 3).map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              target={link.external ? "_blank" : undefined}
-              rel={link.external ? "noopener noreferrer" : undefined}
-              className="uppercase font-bold tracking-widest text-[1.3125rem] text-gray-800 hover:text-gray-500 transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
-
-        {/* Center Logo and Text */}
-        <div className="relative z-10 flex flex-col items-center md:px-0">
-          <div className="flex flex-col items-center gap-2">
-            {/* Main logo */}
-            <div className="relative flex items-center justify-center">
-              <a
-                href="/"
-                className="logo-container z-10 logo-scale-100 relative block"
-                ref={logoContainerRef}
-              >
-                <Image
-                  src={logo}
-                  alt="Best Auto Repair PDX"
-                  priority={true}
-                  style={{ maxHeight: '120px', width: 'auto' }}
-                />
-                <div className="masked-overlay absolute inset-0">
-                  <div className="sheen" ref={sheenRef}></div>
-                </div>
-              </a>
+        <div className="flex items-end justify-between w-full max-w-3xl mx-auto px-6">
+          {/* Logo — half overhangs below nav */}
+          <a
+            href="/"
+            className="logo-container relative block shrink-0"
+            ref={logoContainerRef}
+            style={{ transform: 'translateX(-150px) translateY(calc(50% - 25px))', zIndex: 3100 }}
+          >
+            <Image
+              src={logo}
+              alt="Best Auto Repair PDX"
+              priority={true}
+              style={{ maxHeight: '140px', width: 'auto' }}
+            />
+            <div className="masked-overlay absolute inset-0">
+              <div className="sheen" ref={sheenRef}></div>
             </div>
+          </a>
+
+          {/* Desktop nav links — centered in nav bar */}
+          <div
+            className="nav-desktop-gt-950 gap-6 flex-nowrap whitespace-nowrap"
+            style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translateX(calc(-50% + 100px)) translateY(-50%)' }}
+          >
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+                className="uppercase font-bold tracking-widest text-[1.3125rem] text-gray-800 hover:text-gray-500 transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+
+          {/* Mobile nav links */}
+          <div className="flex flex-wrap gap-4 nav-mobile-lte-950 justify-end self-center ml-auto">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+                className="uppercase font-bold tracking-widest text-sm text-gray-800 hover:text-gray-500 transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
           </div>
         </div>
-
-        {/* Right Navigation Links - Hidden on mobile */}
-        <div className="relative z-10 nav-desktop-gt-950 gap-6">
-          {navLinks.slice(3).map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              target={link.external ? "_blank" : undefined}
-              rel={link.external ? "noopener noreferrer" : undefined}
-              className="uppercase font-bold tracking-widest text-[1.3125rem] text-gray-800 hover:text-gray-500 transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {/* Mobile Navigation Links */}
-      <div className="flex flex-wrap gap-4 nav-mobile-lte-950 justify-center">
-        {navLinks.map((link) => (
-          <a
-            key={link.name}
-            href={link.href}
-            target={link.external ? "_blank" : undefined}
-            rel={link.external ? "noopener noreferrer" : undefined}
-            className="uppercase font-bold tracking-widest text-sm text-gray-800 hover:text-gray-500 transition-colors"
-          >
-            {link.name}
-          </a>
-        ))}
-      </div>
       </nav>
     </div>
   );

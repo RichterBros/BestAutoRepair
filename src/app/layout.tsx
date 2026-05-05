@@ -37,7 +37,7 @@ export default function RootLayout({
         
         
         <Navigation />
-        <div className="min-h-[120px] md:min-h-[140px]" />
+        <div className="h-[100px]" />
         <main className="site-content overflow-x-hidden">{children}</main>
         
         {/* Footer Section */}
