@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto_Condensed } from 'next/font/google'
 import './globals.css'
 import React from 'react'
 import Image from 'next/image'
@@ -8,6 +8,7 @@ import Navigation from './components/Navigation'
 import WedgeStack from './components/WedgeStack'
 
 const inter = Inter({ subsets: ['latin'] })
+const robotoCondensed = Roboto_Condensed({ subsets: ['latin'], variable: '--font-roboto-condensed' })
 
 export const metadata: Metadata = {
   title: 'Best Auto Repair PDX',
@@ -24,7 +25,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       </head>
-      <body className={inter.className + ' bg-black overflow-x-hidden'}>
+      <body className={robotoCondensed.className + ' bg-black overflow-x-hidden'}>
         <HydrationGuard />
         {/* AngleCut corner wedges */}
         {/* Original wedges disabled */}
