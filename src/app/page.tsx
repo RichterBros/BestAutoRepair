@@ -15,12 +15,9 @@ export default function Home() {
   const bottomCardRef = useRef<HTMLDivElement>(null)
   const wedgeLeftRef = useRef<HTMLDivElement>(null)
   const wedgeRightRef = useRef<HTMLDivElement>(null)
-  const fairSectionRef = useRef<HTMLDivElement>(null)
   const fairHeadingRef = useRef<HTMLHeadingElement>(null)
   const fairHeadingWrapperRef = useRef<HTMLDivElement>(null)
   const carBgRef = useRef<HTMLDivElement>(null)
-  const fairLayer1Ref = useRef<HTMLDivElement>(null)
-  const fairLayer2Ref = useRef<HTMLDivElement>(null)
   const heroHeadingRef = useRef<HTMLHeadingElement>(null)
   const heroAnimationDoneRef = useRef<boolean>(false)
   const separationDoneRef = useRef<boolean>(false)
@@ -34,7 +31,7 @@ export default function Home() {
     "url": "https://tuansautoservice.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1540 NE Killingsworth St",
+      "streetAddress": "4222 NE Martin Luther King Jr Blvd",
       "addressLocality": "Portland",
       "addressRegion": "OR",
       "postalCode": "97211"
@@ -126,15 +123,6 @@ export default function Home() {
         wedgeRightRef.current.style.transform = `translate(${baseXRight}px, ${slowY}px)`
       }
 
-      // Layered parallax for the section background: move upward on scroll
-      if (fairLayer1Ref.current) {
-        const t1 = Math.min(y * 0.20, 180)
-        fairLayer1Ref.current.style.transform = `translateY(${-t1}px)`
-      }
-      if (fairLayer2Ref.current) {
-        const t2 = Math.min(y * 0.28, 240)
-        fairLayer2Ref.current.style.transform = `translateY(${-t2}px)`
-      }
     }
     
     // Set initial position for mobile
@@ -242,7 +230,7 @@ export default function Home() {
     <>
       <Head>
         <title>RZ Garage - Portland Auto Repair | ASE Certified Mechanics | (971) 990-9845</title>
-        <meta name="description" content="Trusted Portland auto repair shop with ASE certified mechanics. Honest pricing, same-day service for oil changes, brakes, engine repair and more. Located at 1540 NE Killingsworth St, Portland OR 97211." />
+        <meta name="description" content="Trusted Portland auto repair shop with ASE certified mechanics. Honest pricing, same-day service for oil changes, brakes, engine repair and more. Located at 4222 NE Martin Luther King Jr Blvd, Portland OR 97211." />
         <meta name="keywords" content="Portland auto repair, Portland mechanic, ASE certified, oil change Portland, brake repair Portland, engine repair Portland, honest mechanic Portland" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="RZ Garage - Portland Auto Repair" />
@@ -294,7 +282,7 @@ export default function Home() {
               Full Service Auto Repair and Maintenance
             </h1>
             <p className="text-lg md:text-xl mb-4 font-semibold drop-shadow-lg" style={{ color: 'rgb(255, 255, 255)' }}>
-            1540 NE Killingsworth St Portland OR 97211 <br /> Phone: <a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a>
+            4222 NE Martin Luther King Jr Blvd Portland OR 97211 <br /> Phone: <a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a>
             </p>
             
             <span className="btn-wrapper btn-outline-thin mt-2">
@@ -316,71 +304,34 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section ref={fairSectionRef} className="relative overflow-visible py-16">
-        {/* Background duplicate layers behind clipped background */}
-        <div
-          ref={fairLayer1Ref}
-          aria-hidden="true"
-          className="absolute left-0 right-0 pointer-events-none"
-          style={{
-            top: -40,
-            bottom: -300,
-            background: 'linear-gradient(to top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%)',
-            zIndex: 0,
-            clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 60% 20%, 40% 20%, 0 0)',
-            WebkitClipPath: 'polygon(0 100%, 100% 100%, 100% 0, 60% 20%, 40% 20%, 0 0)',
-            willChange: 'transform',
-          }}
-        />
-        <div
-          ref={fairLayer2Ref}
-          aria-hidden="true"
-          className="absolute left-0 right-0 pointer-events-none"
-          style={{
-            top: -75,
-            bottom: -300,
-            background: 'linear-gradient(to top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%)',
-            zIndex: -1,
-            clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 60% 20%, 40% 20%, 0 0)',
-            WebkitClipPath: 'polygon(0 100%, 100% 100%, 100% 0, 60% 20%, 40% 20%, 0 0)',
-            willChange: 'transform',
-          }}
-        />
-        {/* Static clipped background (matches main header clip) */}
-        <div
-          className="header-clip absolute inset-0"
-          style={{
-            background: 'linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(127, 29, 29) 100%)',
-            zIndex: 1,
-            clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 60% 50%, 40% 50%, 0 0)',
-            WebkitClipPath: 'polygon(0 100%, 100% 100%, 100% 0, 60% 50%, 40% 50%, 0 0)',
-          }}
-        />
-        <div className="relative z-10 container mx-auto px-4">
-          <div ref={fairHeadingWrapperRef} className="fade-in-from-bottom pt-[130px] md:pt-[160px]">
-            <h2 ref={fairHeadingRef} className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight drop-shadow-lg text-center" style={{ color: 'rgb(255, 255, 255)' }}>Fair Pricing And A Comprehensive Warranty On All Repairs</h2>
+      <section className="relative py-8" style={{ background: '#f4f1ec' }}>
+        <div style={{ height: 5, background: '#c46927', position: 'absolute', top: 0, left: 0, right: 0 }} />
+        <div style={{ height: 5, background: '#c46927', position: 'absolute', top: 10, left: 0, right: 0 }} />
+        <div className="container mx-auto px-4">
+          <div ref={fairHeadingWrapperRef} className="fade-in-from-bottom">
+            <h2 ref={fairHeadingRef} className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight drop-shadow-lg text-center" style={{ color: '#1f2937' }}>Fair Pricing And A Comprehensive Warranty On All Repairs</h2>
           </div>
-          
         </div>
       </section>
 
       {/* Three Column Info Section */}
-      <section className="relative z-20 py-16" style={{ background: 'linear-gradient(to bottom, rgb(0, 0, 0), rgb(127, 29, 29))' }}>
+      <section className="relative z-20 py-16" style={{ background: 'linear-gradient(to bottom, #f4f1ec, #5f7c8a)' }}>
         <div className="container mx-auto px-4">
           <div ref={topCardRef} className="shadow-lg p-6 md:p-10">
             <div className="grid md:grid-cols-3 gap-8">
             {/* Left Section - Repair and Maintenance */}
             <div className="text-center">
-              <div className="mb-6 card-angled overflow-hidden fade-in-trigger relative h-48">
-                {/* Toyota Land Cruiser image */}
-                <Image 
-                  src="/porsche.jpg" 
-                  alt="Toyota Land Cruiser - Repair and Maintenance" 
-                  fill
-                  sizes="100vw"
-                  className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
-                  onClick={() => setSelectedImage("/porsche.jpg")}
-                />
+              <div className="mb-6 card-shield-frame">
+                <div className="card-shield overflow-hidden fade-in-trigger relative h-48">
+                  <Image
+                    src="/porsche.jpg"
+                    alt="Toyota Land Cruiser - Repair and Maintenance"
+                    fill
+                    sizes="100vw"
+                    className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
+                    onClick={() => setSelectedImage("/porsche.jpg")}
+                  />
+                </div>
               </div>
               <h3 className="text-xl font-bold mb-4" style={{ color: 'rgb(255, 255, 255)' }}>Repair and Maintenance</h3>
               <p className="text-sm leading-relaxed" style={{ color: 'rgb(255, 255, 255)' }}>
@@ -390,16 +341,17 @@ export default function Home() {
 
             {/* Middle Section - Family Owned and Operated */}
             <div className="text-center">
-              <div className="mb-6 card-angled overflow-hidden fade-in-trigger delay-500 relative h-48">
-                {/* Team image */}
-                <Image 
-                  src="/team-placeholder copy.png" 
-                  alt="RZ Garage Team" 
-                  fill
-                  sizes="100vw"
-                  className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
-                  onClick={() => setSelectedImage("/team-placeholder copy.png")}
-                />
+              <div className="mb-6 card-shield-frame">
+                <div className="card-shield overflow-hidden fade-in-trigger delay-500 relative h-48">
+                  <Image
+                    src="/team-placeholder copy.png"
+                    alt="RZ Garage Team"
+                    fill
+                    sizes="100vw"
+                    className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
+                    onClick={() => setSelectedImage("/team-placeholder copy.png")}
+                  />
+                </div>
               </div>
               <h3 className="text-xl font-bold mb-4" style={{ color: 'rgb(255, 255, 255)' }}>Family Owned and Operated</h3>
               <p className="text-sm leading-relaxed" style={{ color: 'rgb(255, 255, 255)' }}>
@@ -409,16 +361,17 @@ export default function Home() {
 
             {/* Right Section - Business Hours */}
             <div className="text-center">
-              <div className="mb-6 card-angled overflow-hidden fade-in-trigger delay-1000 relative h-48">
-                {/* Shop image */}
-                <Image 
-                  src="/engine_out.jpg" 
-                  alt="RZ Garage Shop" 
-                  fill
-                  sizes="100vw"
-                  className="object-cover cursor-pointer hover:opacity-50  transition-opacity glow-magenta"
-                  onClick={() => setSelectedImage("/engine_out.jpg")}
-                />
+              <div className="mb-6 card-shield-frame">
+                <div className="card-shield overflow-hidden fade-in-trigger delay-1000 relative h-48">
+                  <Image
+                    src="/engine_out.jpg"
+                    alt="RZ Garage Shop"
+                    fill
+                    sizes="100vw"
+                    className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
+                    onClick={() => setSelectedImage("/engine_out.jpg")}
+                  />
+                </div>
               </div>
               <h3 className="text-xl font-bold mb-4" style={{ color: 'rgb(255, 255, 255)' }}>Business Hours</h3>
               <div className="text-sm leading-relaxed" style={{ color: 'rgb(255, 255, 255)' }}>
@@ -433,7 +386,7 @@ export default function Home() {
       </section>
 
       {/* Dark Header Section */}
-      <section className="pt-4 pb-8 -mt-10" style={{ background: 'linear-gradient(to bottom, rgb(127, 29, 29),rgb(127, 29, 29), rgb(0, 0, 0))' }}>
+      <section className="pt-4 pb-8" style={{ background: 'linear-gradient(to bottom, #5f7c8a, #f4f1ec)' }}>
         <div className="container mx-auto px-4">
           <div ref={bottomCardRef} className="relative shadow-lg p-6 md:p-10 overflow-hidden card-angled-br">
             {/* Background video fills card */}
@@ -477,7 +430,7 @@ export default function Home() {
       </section>
 
       {/* Customer Review Section */}
-      <section className="py-16" style={{ background: 'linear-gradient(to bottom, rgb(131, 136, 132) 0%, rgb(200, 205, 202) 35%, rgb(235, 237, 236) 100%)' }}>
+      <section className="py-16" style={{ background: '#5f7c8a' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             {/* Quote Icon */}

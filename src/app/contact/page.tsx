@@ -42,7 +42,7 @@ export default function ContactPage() {
     url: "https://rzgarage.com/contact",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1540 NE Killingsworth St",
+      streetAddress: "4222 NE Martin Luther King Jr Blvd",
       addressLocality: "Portland",
       addressRegion: "OR",
       postalCode: "97211",
@@ -200,7 +200,7 @@ export default function ContactPage() {
         </title>
         <meta
           name="description"
-          content="Contact RZ Garage in Portland, Oregon. ASE certified mechanics, honest pricing, same-day service. Call (971) 990-9845 or visit us at 1540 NE Killingsworth St, Portland OR 97211."
+          content="Contact RZ Garage in Portland, Oregon. ASE certified mechanics, honest pricing, same-day service. Call (971) 990-9845 or visit us at 4222 NE Martin Luther King Jr Blvd, Portland OR 97211."
         />
         <meta
           name="keywords"
@@ -263,7 +263,7 @@ export default function ContactPage() {
                     <span className="font-semibold">Phone:</span> <a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a>
                   </p>
                   <p className="text-gray-900">
-                    <span className="font-semibold">Address:</span> 1540 NE Killingsworth St Portland OR 97211
+                    <span className="font-semibold">Address:</span> 4222 NE Martin Luther King Jr Blvd Portland OR 97211
                   </p>
                 </div>
               </div>
@@ -286,19 +286,19 @@ export default function ContactPage() {
                 </h4>
                 <div className="rounded-lg overflow-hidden h-64">
                   <iframe
-                    src="https://www.google.com/maps?q=1540+NE+Killingsworth+St,+Portland,+OR+97211&hl=en&z=15&output=embed"
+                    src="https://www.google.com/maps?q=4222+NE+Martin+Luther+King+Jr+Blvd,+Portland,+OR+97211&hl=en&z=15&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    aria-label="Map to 1540 NE Killingsworth St, Portland, OR 97211"
+                    aria-label="Map to 4222 NE Martin Luther King Jr Blvd, Portland, OR 97211"
                   />
                 </div>
                 <div className="mt-2">
                   <a
-                    href="https://www.google.com/maps?q=1540+NE+Killingsworth+St,+Portland,+OR+97211"
+                    href="https://www.google.com/maps?q=4222+NE+Martin+Luther+King+Jr+Blvd,+Portland,+OR+97211"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 text-sm underline"
@@ -475,7 +475,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Visit Us
                 </h3>
-                <p className="text-gray-600">1540 NE Killingsworth St</p>
+                <p className="text-gray-600">4222 NE Martin Luther King Jr Blvd</p>
                 <p className="text-sm text-gray-500">Portland, Oregon</p>
               </div>
               <div>

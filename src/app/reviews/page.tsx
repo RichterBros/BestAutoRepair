@@ -14,7 +14,7 @@ export default function ReviewsPage() {
     "url": "https://rzgarage.com/reviews",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1540 NE Killingsworth St",
+      "streetAddress": "4222 NE Martin Luther King Jr Blvd",
       "addressLocality": "Portland",
       "addressRegion": "OR",
       "postalCode": "97211"
