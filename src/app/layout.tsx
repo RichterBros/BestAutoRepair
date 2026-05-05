@@ -10,7 +10,7 @@ import WedgeStack from './components/WedgeStack'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'RZGarageLLC',
+  title: 'Best Auto Repair PDX',
   description: 'Professional automobile repair services',
 }
 
@@ -37,6 +37,7 @@ export default function RootLayout({
         
         
         <Navigation />
+        <div className="min-h-[120px] md:min-h-[140px]" />
         <main className="site-content overflow-x-hidden">{children}</main>
         
         {/* Footer Section */}
