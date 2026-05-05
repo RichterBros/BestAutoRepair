@@ -7,7 +7,7 @@ export default function ServicesPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    "name": "RZ Garage",
+    "name": "Best Auto Repair",
     "description": "Complete auto repair and maintenance services in Portland, OR. Oil changes, brake repair, engine diagnostics, transmission service, and more.",
     "url": "https://rzgarage.com/services",
     "address": {
@@ -17,7 +17,7 @@ export default function ServicesPage() {
       "addressRegion": "OR",
       "postalCode": "97211"
     },
-    "telephone": "(971) 990-9845",
+    "telephone": "(503) 287-5715",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Auto Repair Services",
@@ -57,11 +57,11 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Auto Repair Services Portland | Oil Change, Brake Repair, Engine Diagnostics | RZ Garage</title>
-        <meta name="description" content="Complete auto repair services in Portland, OR. Oil changes, brake repair, engine diagnostics, transmission service, and more. ASE certified mechanics. Call (971) 990-9845." />
+        <title>Auto Repair Services Portland | Oil Change, Brake Repair, Engine Diagnostics | Best Auto Repair</title>
+        <meta name="description" content="Complete auto repair services in Portland, OR. Oil changes, brake repair, engine diagnostics, transmission service, and more. ASE certified mechanics. Call (503) 287-5715." />
         <meta name="keywords" content="auto repair Portland, oil change Portland, brake repair Portland, engine diagnostics Portland, transmission service Portland, ASE certified mechanic Portland" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Auto Repair Services Portland | RZ Garage" />
+        <meta property="og:title" content="Auto Repair Services Portland | Best Auto Repair" />
         <meta property="og:description" content="Complete auto repair services in Portland, OR. Oil changes, brake repair, engine diagnostics, and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rzgarage.com/services" />

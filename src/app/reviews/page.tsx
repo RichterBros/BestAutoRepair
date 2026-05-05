@@ -9,7 +9,7 @@ export default function ReviewsPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    "name": "RZ Garage",
+    "name": "Best Auto Repair",
     "description": "See recent work, customer stories, our promise, and how to get in touch.",
     "url": "https://rzgarage.com/reviews",
     "address": {
@@ -19,17 +19,17 @@ export default function ReviewsPage() {
       "addressRegion": "OR",
       "postalCode": "97211"
     },
-    "telephone": "(971) 990-9845"
+    "telephone": "(503) 287-5715"
   };
 
   return (
     <>
       <Head>
-        <title>Our Work & Customer Stories | RZ Garage Portland | Auto Repair</title>
+        <title>Our Work & Customer Stories | Best Auto Repair Portland | Auto Repair</title>
         <meta name="description" content="Not many reviews? No problem. Explore our recent work, real customer stories, and our 12-month/12,000-mile warranty. Serving Portland drivers since 1998." />
-        <meta name="keywords" content="auto repair Portland, RZ Garage work, customer stories, Portland mechanics, ASE certified, warranty" />
+        <meta name="keywords" content="auto repair Portland, Best Auto Repair work, customer stories, Portland mechanics, ASE certified, warranty" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Our Work & Customer Stories | RZ Garage Portland" />
+        <meta property="og:title" content="Our Work & Customer Stories | Best Auto Repair Portland" />
         <meta property="og:description" content="See recent work, customer stories, and our promise. Family-owned auto repair in Portland since 1998." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rzgarage.com/reviews" />
@@ -49,7 +49,7 @@ export default function ReviewsPage() {
           <div className="max-w-5xl mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-4">OUR WORK SPEAKS FOR ITSELF</h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-              At <span className="font-semibold">RZ Garage</span>, we know your car is more than just transportation — it’s your daily freedom. That’s why we treat every repair as if it were our own. For over {yearsInBusiness}+ years, we’ve been helping drivers in Portland get back on the road safely and confidently.
+              At <span className="font-semibold">Best Auto Repair</span>, we know your car is more than just transportation — it’s your daily freedom. That’s why we treat every repair as if it were our own. For over {yearsInBusiness}+ years, we’ve been helping drivers in Portland get back on the road safely and confidently.
             </p>
           </div>
         </section>
@@ -154,7 +154,7 @@ export default function ReviewsPage() {
             <p className="text-xl text-gray-300 mb-8">Call now or schedule service online — we’ll take it from here.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <span className="btn-wrapper">
-                <a href="tel:+19719909845" className="font-bold py-3 px-8 transition-colors btn-angled">CALL (971) 990-9845</a>
+                <a href="tel:+15032875715" className="font-bold py-3 px-8 transition-colors btn-angled">CALL (503) 287-5715</a>
               </span>
               <span className="btn-wrapper">
                 <a href="/contact" className="font-bold py-3 px-8 transition-colors btn-angled">SCHEDULE SERVICE</a>

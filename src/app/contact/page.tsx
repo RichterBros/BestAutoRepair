@@ -36,9 +36,9 @@ export default function ContactPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    name: "RZ Garage",
+    name: "Best Auto Repair",
     description:
-      "Contact RZ Garage for all your automotive repair needs in Portland, OR. ASE certified mechanics, honest pricing, same-day service.",
+      "Contact Best Auto Repair for all your automotive repair needs in Portland, OR. ASE certified mechanics, honest pricing, same-day service.",
     url: "https://rzgarage.com/contact",
     address: {
       "@type": "PostalAddress",
@@ -47,11 +47,11 @@ export default function ContactPage() {
       addressRegion: "OR",
       postalCode: "97211",
     },
-    telephone: "(971) 990-9845",
+    telephone: "(503) 287-5715",
     openingHours: "Mo-Fr 9-6",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "(971) 990-9845",
+      telephone: "(503) 287-5715",
       contactType: "customer service",
       areaServed: "US",
       availableLanguage: "English",
@@ -195,22 +195,22 @@ export default function ContactPage() {
     <>
       <Head>
         <title>
-          Contact RZ Garage Portland | Call (971) 990-9845 | ASE Certified
+          Contact Best Auto Repair Portland | Call (503) 287-5715 | ASE Certified
           Mechanics
         </title>
         <meta
           name="description"
-          content="Contact RZ Garage in Portland, Oregon. ASE certified mechanics, honest pricing, same-day service. Call (971) 990-9845 or visit us at 4222 NE Martin Luther King Jr Blvd, Portland OR 97211."
+          content="Contact Best Auto Repair in Portland, Oregon. ASE certified mechanics, honest pricing, same-day service. Call (503) 287-5715 or visit us at 4222 NE Martin Luther King Jr Blvd, Portland OR 97211."
         />
         <meta
           name="keywords"
-          content="contact RZ Garage Portland, auto repair Portland contact, mechanic Portland phone, ASE certified mechanic Portland contact"
+          content="contact Best Auto Repair Portland, auto repair Portland contact, mechanic Portland phone, ASE certified mechanic Portland contact"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Contact RZ Garage Portland" />
+        <meta property="og:title" content="Contact Best Auto Repair Portland" />
         <meta
           property="og:description"
-          content="Contact RZ Garage in Portland, OR. ASE certified mechanics, honest pricing, same-day service."
+          content="Contact Best Auto Repair in Portland, OR. ASE certified mechanics, honest pricing, same-day service."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rzgarage.com/contact" />
@@ -244,7 +244,7 @@ export default function ContactPage() {
               {/* Business Information */}
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  RZ Garage
+                  Best Auto Repair
                 </h2>
               </div>
 
@@ -260,7 +260,7 @@ export default function ContactPage() {
 
                 <div className="space-y-3">
                   <p className="text-gray-900">
-                    <span className="font-semibold">Phone:</span> <a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a>
+                    <span className="font-semibold">Phone:</span> <a href="tel:+15032875715" className="hover:underline">(503) 287-5715</a>
                   </p>
                   <p className="text-gray-900">
                     <span className="font-semibold">Address:</span> 4222 NE Martin Luther King Jr Blvd Portland OR 97211
@@ -444,7 +444,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="mb-4" style={{ color: "rgb(74, 162, 192)" }}>
-                  <a href="tel:+19719909845" aria-label="Call RZ Garage" className="transition-colors hover:text-gray-400">
+                  <a href="tel:+15032875715" aria-label="Call Best Auto Repair" className="transition-colors hover:text-gray-400">
                     <span
                       className="material-symbols-outlined align-middle"
                       style={{ fontSize: "40px", lineHeight: 1 }}
@@ -457,7 +457,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Call Us
                 </h3>
-                <p className="text-gray-600"><a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a></p>
+                <p className="text-gray-600"><a href="tel:+15032875715" className="hover:underline">(503) 287-5715</a></p>
                 <p className="text-sm text-gray-500">
                   Available during business hours
                 </p>

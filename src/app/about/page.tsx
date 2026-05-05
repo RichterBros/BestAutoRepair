@@ -59,8 +59,8 @@ export default function About() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    "name": "RZ Garage",
-    "description": "Learn about RZ Garage - Portland's trusted auto repair shop with ASE certified mechanics. Family-owned business serving Portland since 1995 with honest pricing and quality service.",
+    "name": "Best Auto Repair",
+    "description": "Learn about Best Auto Repair - Portland's trusted auto repair shop with ASE certified mechanics. Family-owned business serving Portland since 1995 with honest pricing and quality service.",
     "url": "https://rzgarage.com/about",
     "address": {
       "@type": "PostalAddress",
@@ -69,7 +69,7 @@ export default function About() {
       "addressRegion": "OR",
       "postalCode": "97211"
     },
-    "telephone": "(971) 990-9845",
+    "telephone": "(503) 287-5715",
     "openingHours": "Mo-Fr 09:00-18:00",
     "priceRange": "$$",
     "foundingDate": "1995",
@@ -90,12 +90,12 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About RZ Garage Portland | ASE Certified Mechanics Since 1995 | (971) 990-9845</title>
-        <meta name="description" content="Learn about RZ Garage - Portland's trusted auto repair shop with ASE certified mechanics. Family-owned business serving Portland since 1995 with honest pricing and quality service." />
-        <meta name="keywords" content="about RZ Garage Portland, ASE certified mechanic Portland, auto repair shop Portland, family owned mechanic Portland, honest mechanic Portland" />
+        <title>About Best Auto Repair Portland | ASE Certified Mechanics Since 1995 | (503) 287-5715</title>
+        <meta name="description" content="Learn about Best Auto Repair - Portland's trusted auto repair shop with ASE certified mechanics. Family-owned business serving Portland since 1995 with honest pricing and quality service." />
+        <meta name="keywords" content="about Best Auto Repair Portland, ASE certified mechanic Portland, auto repair shop Portland, family owned mechanic Portland, honest mechanic Portland" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="About RZ Garage Portland" />
-        <meta property="og:description" content="Learn about RZ Garage - Portland's trusted auto repair shop with ASE certified mechanics since 1995." />
+        <meta property="og:title" content="About Best Auto Repair Portland" />
+        <meta property="og:description" content="Learn about Best Auto Repair - Portland's trusted auto repair shop with ASE certified mechanics since 1995." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://rzgarage.com/about" />
         <meta property="og:image" content="/logo.png" />
@@ -123,7 +123,7 @@ export default function About() {
           {/* Content */}
           <div className="relative z-20 text-center text-white hero-text-scale-up">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg">
-              ABOUT RZ GARAGE
+              ABOUT Best Auto Repair
             </h1>
             <p className="text-xl md:text-2xl font-semibold drop-shadow-lg">
               Caring for vehicles since 1998
@@ -138,7 +138,7 @@ export default function About() {
               {/* Left Column - About Us (Top Row) */}
               <div className="space-y-6 lg:col-start-1 lg:row-start-1 h-full lg:min-h-[520px] flex flex-col">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                  RZ Garage Is Family Owned And Operated
+                  Best Auto Repair Is Family Owned And Operated
                 </h2>
                 
                 <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -165,7 +165,7 @@ export default function About() {
                     FULL SERVICE AUTO REPAIR AND MAINTENANCE
                   </p>
                   <p className="text-lg font-bold text-gray-800 text-center">
-                    Call to schedule: <a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a>
+                    Call to schedule: <a href="tel:+15032875715" className="hover:underline">(503) 287-5715</a>
                   </p>
                 </div>
                 

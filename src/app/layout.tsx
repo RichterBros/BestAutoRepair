@@ -67,11 +67,11 @@ export default function RootLayout({
                     <div className="space-y-6">
                       {/* Business Information */}
                       <div style={{ color: 'rgb(255, 255, 255)' }}>
-                        <h3 className="text-xl font-bold mb-2">RZ Garage</h3>
+                        <h3 className="text-xl font-bold mb-2">Best Auto Repair</h3>
                         <p className="text-sm mb-2">FULL SERVICE AUTO REPAIR AND MAINTENANCE</p>
                         <p className="text-sm mb-2">4222 NE Martin Luther King Jr Blvd, Portland, OR 97211
                         </p>
-                        <p className="text-sm mb-4">Call to schedule: <a href="tel:+19719909845" className="font-bold hover:underline">(971) 990-9845</a></p>
+                        <p className="text-sm mb-4">Call to schedule: <a href="tel:+15032875715" className="font-bold hover:underline">(503) 287-5715</a></p>
                         <div className="text-sm">
                           <p>Mon-Fri: 9:00 am - 6:00 pm</p>
                           <p>Sat-Sun: Closed</p>
@@ -88,7 +88,7 @@ export default function RootLayout({
                           >
                             <Image 
                               src="/map-placeholder.jpg" 
-                              alt="RZ Garage Location Map" 
+                              alt="Best Auto Repair Location Map" 
                               width={800} height={192}
                               className="w-full h-48 object-cover"
                             />
@@ -130,7 +130,7 @@ export default function RootLayout({
               <div className="container mx-auto px-4">
                 <div className="flex justify-center">
                   <div className="text-sm" style={{ color: 'rgb(255, 255, 255)' }}>
-                    <span>© 2025 RZ Garage. All rights reserved. // Site by Richter Bros. Media</span>
+                    <span>© 2025 Best Auto Repair. All rights reserved. // Site by Richter Bros. Media</span>
                   </div>
                 </div>
               </div>

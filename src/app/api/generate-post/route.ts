@@ -31,11 +31,11 @@ function slugify(input: string): string {
 
 async function generateWithOpenAI(topic?: string): Promise<{ title: string; excerpt: string; contentHtml: string }> {
   const prompt = [
-    'You are writing for a local auto repair shop in Portland, OR (RZ Garage).',
+    'You are writing for a local auto repair shop in Portland, OR (Best Auto Repair).',
     `Write a 700-900 word, accurate, practical blog post about: ${topic || 'Everyday car care tips for Portland drivers'}.`,
     'Audience: everyday car owners, non-technical. Tone: friendly, helpful, professional.',
     'Output HTML only. Use <h2>/<h3>, <p>, <ul>/<li>, and short paragraphs.',
-    'Start with a 1-2 sentence summary. End with a short safety disclaimer and a call to action to contact RZ Garage.',
+    'Start with a 1-2 sentence summary. End with a short safety disclaimer and a call to action to contact Best Auto Repair.',
   ].join('\n')
 
   const sysPrompt = 'Return a compact JSON object with keys: title, excerpt, contentHtml. Do not include markdown fences.'

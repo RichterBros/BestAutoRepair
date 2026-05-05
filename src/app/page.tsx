@@ -26,7 +26,7 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    "name": "RZ Garage",
+    "name": "Best Auto Repair",
     "description": "Trusted Portland auto repair shop with ASE certified mechanics. Honest pricing, same-day service for oil changes, brakes, engine repair and more.",
     "url": "https://tuansautoservice.com",
     "address": {
@@ -36,7 +36,7 @@ export default function Home() {
       "addressRegion": "OR",
       "postalCode": "97211"
     },
-    "telephone": "(971) 990-9845",
+    "telephone": "(503) 287-5715",
     "openingHours": "Mo-Fr 09:00-18:00",
     "priceRange": "$$",
     "aggregateRating": {
@@ -229,17 +229,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>RZ Garage - Portland Auto Repair | ASE Certified Mechanics | (971) 990-9845</title>
+        <title>Best Auto Repair - Portland Auto Repair | ASE Certified Mechanics | (503) 287-5715</title>
         <meta name="description" content="Trusted Portland auto repair shop with ASE certified mechanics. Honest pricing, same-day service for oil changes, brakes, engine repair and more. Located at 4222 NE Martin Luther King Jr Blvd, Portland OR 97211." />
         <meta name="keywords" content="Portland auto repair, Portland mechanic, ASE certified, oil change Portland, brake repair Portland, engine repair Portland, honest mechanic Portland" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="RZ Garage - Portland Auto Repair" />
+        <meta property="og:title" content="Best Auto Repair - Portland Auto Repair" />
         <meta property="og:description" content="Trusted Portland auto repair shop with ASE certified mechanics. Honest pricing, same-day service." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tuansautoservice.com" />
         <meta property="og:image" content="/logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="RZ Garage - Portland Auto Repair" />
+        <meta name="twitter:title" content="Best Auto Repair - Portland Auto Repair" />
         <meta name="twitter:description" content="Trusted Portland auto repair shop with ASE certified mechanics." />
         <link rel="canonical" href="https://tuansautoservice.com" />
         <script
@@ -282,7 +282,7 @@ export default function Home() {
               Full Service Auto Repair and Maintenance
             </h1>
             <p className="text-lg md:text-xl mb-4 font-semibold drop-shadow-lg" style={{ color: 'rgb(255, 255, 255)' }}>
-            4222 NE Martin Luther King Jr Blvd Portland OR 97211 <br /> Phone: <a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a>
+            4222 NE Martin Luther King Jr Blvd Portland OR 97211 <br /> Phone: <a href="tel:+15032875715" className="hover:underline">(503) 287-5715</a>
             </p>
             
             <span className="btn-wrapper btn-outline-thin mt-2">
@@ -345,7 +345,7 @@ export default function Home() {
                 <div className="card-shield overflow-hidden fade-in-trigger delay-500 relative h-48">
                   <Image
                     src="/team-placeholder copy.png"
-                    alt="RZ Garage Team"
+                    alt="Best Auto Repair Team"
                     fill
                     sizes="100vw"
                     className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
@@ -365,7 +365,7 @@ export default function Home() {
                 <div className="card-shield overflow-hidden fade-in-trigger delay-1000 relative h-48">
                   <Image
                     src="/engine_out.jpg"
-                    alt="RZ Garage Shop"
+                    alt="Best Auto Repair Shop"
                     fill
                     sizes="100vw"
                     className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
@@ -377,7 +377,7 @@ export default function Home() {
               <div className="text-sm leading-relaxed" style={{ color: 'rgb(255, 255, 255)' }}>
                 <p className="mb-2">Mon-Fri: 9:00 AM - 6:00 PM</p>
                 <p className="mb-2">Sat-Sun: Closed</p>
-                <p className="font-semibold">Call to schedule: <a href="tel:+19719909845" className="hover:underline">(971) 990-9845</a></p>
+                <p className="font-semibold">Call to schedule: <a href="tel:+15032875715" className="hover:underline">(503) 287-5715</a></p>
               </div>
             </div>
             </div>
@@ -386,9 +386,9 @@ export default function Home() {
       </section>
 
       {/* Dark Header Section */}
-      <section className="pt-4 pb-8" style={{ background: 'linear-gradient(to bottom, #5f7c8a, #f4f1ec)' }}>
+      <section className="relative pt-4 pb-8" style={{ background: 'linear-gradient(to bottom, #5f7c8a, #f4f1ec)', boxShadow: '0 10px 30px rgba(0,0,0,0.2), 0 -10px 30px rgba(0,0,0,0.2)', zIndex: 25 }}>
         <div className="container mx-auto px-4">
-          <div ref={bottomCardRef} className="relative shadow-lg p-6 md:p-10 overflow-hidden card-angled-br">
+          <div ref={bottomCardRef} className="relative shadow-lg p-6 md:p-10 overflow-hidden">
             {/* Background video fills card */}
             <div className="absolute inset-0">
               <div
@@ -409,7 +409,7 @@ export default function Home() {
               {/* Gradient to keep left side readable - use brand light blue */}
               <div
                 className="absolute inset-0"
-                style={{ background: 'linear-gradient(to right, rgba(127, 29, 29), rgba(74, 162, 192, 0))' }}
+                style={{ background: 'linear-gradient(to right, rgba(196, 105, 39, 0.9), rgba(196, 105, 39, 0))' }}
               />
             </div>
             {/* Content */}
@@ -438,8 +438,8 @@ export default function Home() {
             
             {/* Review Text */}
             <blockquote className="text-lg md:text-xl leading-relaxed mb-8 text-left" style={{ color: 'rgb(30, 46, 67)' }}>
-            Located in the heart of Portland, OR, RZ Garage stands out as a reliable destination for all your car repair needs. From routine maintenance to complex diagnostics, this auto repair shop offers a wide range of services to keep your vehicle running smoothly on the road. With a team of experienced technicians at the helm, you can trust that your car is in good hands when you bring it to RZ Garage. <br /> <br />
-            What sets RZ Garage apart is their dedication to providing top-notch customer service alongside expert mechanical work. Whether you're dealing with a pesky check engine light or need a quick tune-up, the staff here is known for their friendly approach and willingness to go the extra mile for every customer. Next time your car needs attention, consider paying a visit to RZ Garage for a seamless and stress-free experience.
+            Located in the heart of Portland, OR, Best Auto Repair stands out as a reliable destination for all your car repair needs. From routine maintenance to complex diagnostics, this auto repair shop offers a wide range of services to keep your vehicle running smoothly on the road. With a team of experienced technicians at the helm, you can trust that your car is in good hands when you bring it to Best Auto Repair. <br /> <br />
+            What sets Best Auto Repair apart is their dedication to providing top-notch customer service alongside expert mechanical work. Whether you're dealing with a pesky check engine light or need a quick tune-up, the staff here is known for their friendly approach and willingness to go the extra mile for every customer. Next time your car needs attention, consider paying a visit to Best Auto Repair for a seamless and stress-free experience.
             </blockquote>
             
             {/* Review Source */}
