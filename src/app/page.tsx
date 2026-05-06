@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
+import Slideshow from './components/Slideshow'
 
 export default function Home() {
   const bgRef = useRef<HTMLDivElement>(null)
@@ -392,24 +393,10 @@ export default function Home() {
       <section className="relative pt-4 pb-8" style={{ background: 'linear-gradient(to bottom, #5f7c8a, #f4f1ec)', boxShadow: '0 10px 30px rgba(0,0,0,0.2), 0 -10px 30px rgba(0,0,0,0.2)', zIndex: 25 }}>
         <div className="container mx-auto px-4">
           <div ref={bottomCardRef} className="relative shadow-lg p-6 md:p-10 overflow-hidden" style={{ borderRadius: 5 }}>
-            {/* Background video fills card */}
+            {/* Background slideshow fills card */}
             <div className="absolute inset-0">
-              <div
-                ref={carBgRef}
-                className="absolute inset-0 fade-in-from-bottom"
-              >
-                <video
-                  ref={showcaseVideoRef}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover"
-                >
-                  <source src="/shop_bmws.mp4" type="video/mp4" />
-                </video>
-              </div>
-              {/* Gradient to keep left side readable - use brand light blue */}
+              <Slideshow />
+              {/* Gradient to keep left side readable */}
               <div
                 className="absolute inset-0"
                 style={{ background: 'linear-gradient(to right, rgba(196, 105, 39, 0.9), rgba(196, 105, 39, 0))' }}
