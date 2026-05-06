@@ -264,13 +264,13 @@ export default function Home() {
             console.log('Video failed to load:', e);
           }}
         >
-          <source src="/bmw_hero.mp4" type="video/mp4" />
+          <source src="/best_auto_hero.mp4" type="video/mp4" />
         </video>
       </div>
       {/* Global dark gradient overlay over video */}
-      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -1, background: 'linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.25))' }} />
+      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -1, background: 'linear-gradient(to right, rgba(10,20,28,0.9), rgba(196,105,39,0.25))' }} />
       {/* Global top fade to soften the video's top edge on scroll */}
-      <div className="fixed left-0 right-0 top-0 h-28 pointer-events-none" style={{ zIndex: -1, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0))' }} />
+      <div className="fixed left-0 right-0 top-0 h-28 pointer-events-none" style={{ zIndex: -1, background: 'linear-gradient(to bottom, rgba(10,20,28,0.6), rgba(10,20,28,0))' }} />
       {/* Global black overlay fade on first load (matches hero) */}
       <div className={`fixed inset-0 pointer-events-none transition-opacity duration-1000 ${overlayFadeOut ? 'opacity-0' : 'opacity-100'}`} style={{ zIndex: -1, backgroundColor: 'black' }} />
       {/* Hero Section with Video Background */}
@@ -419,7 +419,7 @@ export default function Home() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
               {/* Left Side - Text */}
               <div className="flex-1 mb-8 md:mb-0">
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight" style={{ color: 'rgb(255, 255, 255)' }}>
+                <h2 className="text-3xl md:text-4xl font-bold leading-tight" style={{ color: 'rgb(255, 255, 255)', textShadow: '0 2px 0 rgba(0, 0, 0, 0.75)' }}>
                   Classics, restoration, 4X4, offroad<br />
                   and performance upgrades and<br />
                   fabrication

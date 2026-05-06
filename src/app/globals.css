@@ -604,8 +604,15 @@ html:not(.ready) .hero-heading-slide-in-right {
   }
 }
 
+/* Hamburger menu button — exempt from global button styles */
+.nav-hamburger {
+  background: transparent !important;
+  clip-path: none !important;
+  color: inherit !important;
+}
+
 /* Button variant: notches at upper-left and lower-right; smaller notch size */
-button,
+button:not(.nav-hamburger),
 [type="button"],
 [type="submit"],
 [type="reset"],
@@ -736,6 +743,26 @@ a[role="button"],
 .nav-mobile-lte-950 { display: none !important; }
 @media (max-width: 950px) {
   .nav-mobile-lte-950 { display: flex !important; }
+}
+
+/* Logo positioning */
+.nav-logo {
+  transform: translateX(-150px) translateY(calc(50% - 25px));
+  z-index: 3100;
+}
+.nav-logo-img { max-height: 140px; }
+
+@media (max-width: 950px) {
+  .nav-logo {
+    transform: translateY(calc(50% - 25px));
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-logo {
+    transform: translateY(0);
+  }
+  .nav-logo-img { max-height: 80px !important; }
 }
 
 /* Nav link flag underline hover animation */
