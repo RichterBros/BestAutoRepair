@@ -185,7 +185,7 @@ export default function About() {
                 </div>
                 
               {/* Shop Exterior Video - trigger */}
-              <div className="w-full h-[306px] card-angled overflow-hidden mb-0 fade-in-from-right mt-auto relative" id="image-trigger">
+              <div className="w-full h-[306px] img-rhombus overflow-hidden mb-0 fade-in-from-right mt-auto relative" id="image-trigger">
                 <video
                   ref={injectorVideoRef}
                   muted
@@ -198,16 +198,16 @@ export default function About() {
               </div>
                 
                 {/* Team Image - Shown on mobile, hidden on desktop */}
-                <div className="block lg:hidden w-full h-64 card-angled overflow-hidden fade-in-from-left relative" id="team-image-mobile">
+                <div className="block lg:hidden w-full h-64 img-rhombus overflow-hidden fade-in-from-left relative" id="team-image-mobile">
                   <Image src="/dodge.jpg" alt="Dodge Grand Caravan 2018 Cluster replacement" fill sizes="100vw" className="object-cover" />
                 </div>
               </div>
 
               {/* Bottom Row - Aligned Grey Boxes */}
-              <div className="hidden lg:block w-full h-64 card-angled overflow-hidden fade-in-from-left lg:col-start-1 lg:row-start-2 mb-0 relative" id="team-image-desktop">
+              <div className="hidden lg:block w-full h-64 img-rhombus overflow-hidden fade-in-from-left lg:col-start-1 lg:row-start-2 mb-0 relative" id="team-image-desktop">
                 <Image src="/dodge.jpg" alt="Dodge Grand Caravan 2018 Cluster replacement" fill sizes="50vw" className="object-cover" />
               </div>
-              <div className="w-full h-64 card-angled overflow-hidden fade-in-from-right lg:col-start-2 lg:row-start-2 mb-0 relative" id="garage-image">
+              <div className="w-full h-64 img-rhombus overflow-hidden fade-in-from-right lg:col-start-2 lg:row-start-2 mb-0 relative" id="garage-image">
                 <Image src="/alpha.jpg" alt="Alfa Romeo" fill sizes="50vw" className="object-cover" />
               </div>
               {/* Spacer Row to force 50px gap before footer on large screens */}

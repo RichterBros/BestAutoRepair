@@ -84,7 +84,7 @@ export default function Navigation() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className="nav-link-flag uppercase font-bold tracking-widest text-[1.3125rem] text-gray-800 hover:text-gray-500 transition-colors"
+                className={`nav-link-flag uppercase font-bold tracking-widest text-[1.3125rem] text-gray-800 hover:text-gray-500 transition-colors${pathname === link.href ? ' nav-link-active' : ''}`}
               >
                 {link.name}
               </a>
@@ -99,7 +99,7 @@ export default function Navigation() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className="nav-link-flag uppercase font-bold tracking-widest text-sm text-gray-800 hover:text-gray-500 transition-colors"
+                className={`nav-link-flag uppercase font-bold tracking-widest text-sm text-gray-800 hover:text-gray-500 transition-colors${pathname === link.href ? ' nav-link-active' : ''}`}
               >
                 {link.name}
               </a>

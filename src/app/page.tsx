@@ -307,18 +307,18 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="relative py-8" style={{ background: '#f4f1ec' }}>
+      <section className="relative pt-8 pb-2" style={{ background: '#f4f1ec' }}>
         <div style={{ height: 5, background: '#c46927', position: 'absolute', top: 0, left: 0, right: 0 }} />
         <div style={{ height: 5, background: '#c46927', position: 'absolute', top: 10, left: 0, right: 0 }} />
         <div className="container mx-auto px-4">
           <div ref={fairHeadingWrapperRef} className="fade-in-from-bottom">
-            <h2 ref={fairHeadingRef} className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight drop-shadow-lg text-center" style={{ color: '#1f2937' }}>Fair Pricing And A Comprehensive Warranty On All Repairs</h2>
+            <h2 ref={fairHeadingRef} className="text-2xl md:text-3xl font-extrabold mb-0 leading-tight drop-shadow-lg text-center" style={{ color: '#1f2937' }}>Fair Pricing And A Comprehensive Warranty On All Repairs</h2>
           </div>
         </div>
       </section>
 
       {/* Three Column Info Section */}
-      <section className="relative z-20 py-16" style={{ background: 'linear-gradient(to bottom, #f4f1ec, #5f7c8a)' }}>
+      <section className="relative z-20 pt-0 pb-16" style={{ background: 'linear-gradient(to bottom, #f4f1ec, #5f7c8a)' }}>
         <div className="container mx-auto px-4">
           <div ref={topCardRef} className="shadow-lg p-6 md:p-10" style={{ borderRadius: 5 }}>
             <div className="grid md:grid-cols-3 gap-8">

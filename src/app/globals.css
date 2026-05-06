@@ -563,6 +563,22 @@ html:not(.ready) .hero-heading-slide-in-right {
   }
 }
 
+/* Rhombus/parallelogram image container: both sides slant ~15deg same direction, 5px corner bevel */
+.img-rhombus {
+  --rh-x: 65px;  /* horizontal offset for ~15deg slant */
+  --rh-r: 5px;   /* corner bevel */
+  clip-path: polygon(
+    calc(var(--rh-x) + var(--rh-r)) 0%,
+    calc(100% - var(--rh-r)) 0%,
+    100% var(--rh-r),
+    calc(100% - var(--rh-x) + var(--rh-r)) calc(100% - var(--rh-r)),
+    calc(100% - var(--rh-x) - var(--rh-r)) 100%,
+    var(--rh-r) 100%,
+    0% calc(100% - var(--rh-r)),
+    var(--rh-x) var(--rh-r)
+  );
+}
+
 /* Variant: only bottom-right corner notched; others square */
 .card-angled-br {
   --notch-size: 28px;
@@ -743,7 +759,8 @@ a[role="button"],
   transition: transform 0.22s ease-out, opacity 0.18s ease-out;
 }
 
-.nav-link-flag:hover::after {
+.nav-link-flag:hover::after,
+.nav-link-flag.nav-link-active::after {
   transform: scaleX(1);
   opacity: 1;
 }
