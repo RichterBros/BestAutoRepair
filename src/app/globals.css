@@ -721,3 +721,29 @@ a[role="button"],
 @media (max-width: 950px) {
   .nav-mobile-lte-950 { display: flex !important; }
 }
+
+/* Nav link flag underline hover animation */
+.nav-link-flag {
+  position: relative;
+}
+
+.nav-link-flag::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #c46927;
+  /* Parallelogram taper matching logo flag/wing shape */
+  clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+  transform: scaleX(0);
+  transform-origin: left center;
+  opacity: 0;
+  transition: transform 0.22s ease-out, opacity 0.18s ease-out;
+}
+
+.nav-link-flag:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}

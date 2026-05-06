@@ -285,14 +285,17 @@ export default function Home() {
             4222 NE Martin Luther King Jr Blvd Portland OR 97211 <br /> Phone: <a href="tel:+15032875715" className="hover:underline">(503) 287-5715</a>
             </p>
             
-            <span className="btn-wrapper btn-outline-thin mt-2">
-              <a
-                href="/contact"
-                className="inline-block font-bold py-3 px-6 text-lg transition-colors duration-200 btn-angled"
-              >
-                Contact Us!
-              </a>
-            </span>
+            <a
+              href="/contact"
+              className="inline-block font-bold py-3 px-6 text-lg text-white mt-2 hover:brightness-110 transition-all duration-200"
+              style={{
+                borderRadius: 5,
+                border: '3px solid #c46927',
+                background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)',
+              }}
+            >
+              Contact Us!
+            </a>
           </div>
           {/* ASE Badge Placeholder */}
           <div className="flex-1 flex justify-center md:justify-end mt-8 md:mt-0">
@@ -317,11 +320,11 @@ export default function Home() {
       {/* Three Column Info Section */}
       <section className="relative z-20 py-16" style={{ background: 'linear-gradient(to bottom, #f4f1ec, #5f7c8a)' }}>
         <div className="container mx-auto px-4">
-          <div ref={topCardRef} className="shadow-lg p-6 md:p-10">
+          <div ref={topCardRef} className="shadow-lg p-6 md:p-10" style={{ borderRadius: 5 }}>
             <div className="grid md:grid-cols-3 gap-8">
             {/* Left Section - Repair and Maintenance */}
             <div className="text-center">
-              <div className="mb-6 card-shield-frame">
+              <div className="mb-6 card-shield-frame" style={{ borderRadius: '5px 5px 0 0', overflow: 'hidden' }}>
                 <div className="card-shield overflow-hidden fade-in-trigger relative h-48">
                   <Image
                     src="/porsche.jpg"
@@ -341,7 +344,7 @@ export default function Home() {
 
             {/* Middle Section - Family Owned and Operated */}
             <div className="text-center">
-              <div className="mb-6 card-shield-frame">
+              <div className="mb-6 card-shield-frame" style={{ borderRadius: '5px 5px 0 0', overflow: 'hidden' }}>
                 <div className="card-shield overflow-hidden fade-in-trigger delay-500 relative h-48">
                   <Image
                     src="/team-placeholder copy.png"
@@ -361,7 +364,7 @@ export default function Home() {
 
             {/* Right Section - Business Hours */}
             <div className="text-center">
-              <div className="mb-6 card-shield-frame">
+              <div className="mb-6 card-shield-frame" style={{ borderRadius: '5px 5px 0 0', overflow: 'hidden' }}>
                 <div className="card-shield overflow-hidden fade-in-trigger delay-1000 relative h-48">
                   <Image
                     src="/engine_out.jpg"
@@ -388,7 +391,7 @@ export default function Home() {
       {/* Dark Header Section */}
       <section className="relative pt-4 pb-8" style={{ background: 'linear-gradient(to bottom, #5f7c8a, #f4f1ec)', boxShadow: '0 10px 30px rgba(0,0,0,0.2), 0 -10px 30px rgba(0,0,0,0.2)', zIndex: 25 }}>
         <div className="container mx-auto px-4">
-          <div ref={bottomCardRef} className="relative shadow-lg p-6 md:p-10 overflow-hidden">
+          <div ref={bottomCardRef} className="relative shadow-lg p-6 md:p-10 overflow-hidden" style={{ borderRadius: 5 }}>
             {/* Background video fills card */}
             <div className="absolute inset-0">
               <div
@@ -446,14 +449,17 @@ export default function Home() {
             {/*<p className="text-sm text-gray-600 mb-8">Review posted on hellophoenix.com</p>*/}
             
             {/* More Reviews Button */}
-            <span className="btn-wrapper">
-              <a 
-                href="/reviews" 
-                className="inline-block font-bold py-3 px-8 transition-colors duration-200 btn-angled"
-              >
-                Our Work
-              </a>
-            </span>
+            <a
+              href="/reviews"
+              className="inline-block font-bold py-3 px-8 text-white hover:brightness-110 transition-all duration-200"
+              style={{
+                borderRadius: 5,
+                border: '3px solid #c46927',
+                background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)',
+              }}
+            >
+              Our Work
+            </a>
           </div>
         </div>
       </section>
