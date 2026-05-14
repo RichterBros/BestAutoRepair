@@ -61,7 +61,7 @@ export default function About() {
     "@type": "AutoRepair",
     "name": "Best Auto Repair",
     "description": "Learn about Best Auto Repair - Portland's trusted auto repair shop with ASE certified mechanics. Family-owned business serving Portland since 1995 with honest pricing and quality service.",
-    "url": "https://rzgarage.com/about",
+    "url": "https://bestautorepairpdx.com/about",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4222 NE Martin Luther King Jr Blvd",
@@ -97,9 +97,9 @@ export default function About() {
         <meta property="og:title" content="About Best Auto Repair Portland" />
         <meta property="og:description" content="Learn about Best Auto Repair - Portland's trusted auto repair shop with ASE certified mechanics since 1995." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://rzgarage.com/about" />
+        <meta property="og:url" content="https://bestautorepairpdx.com/about" />
         <meta property="og:image" content="/logo.png" />
-        <link rel="canonical" href="https://rzgarage.com/about" />
+        <link rel="canonical" href="https://bestautorepairpdx.com/about" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

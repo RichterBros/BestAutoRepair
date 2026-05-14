@@ -29,7 +29,7 @@ export default function Home() {
     "@type": "AutoRepair",
     "name": "Best Auto Repair",
     "description": "Trusted Portland auto repair shop with ASE certified mechanics. Honest pricing, same-day service for oil changes, brakes, engine repair and more.",
-    "url": "https://tuansautoservice.com",
+    "url": "https://bestautorepairpdx.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4222 NE Martin Luther King Jr Blvd",
@@ -237,12 +237,12 @@ export default function Home() {
         <meta property="og:title" content="Best Auto Repair - Portland Auto Repair" />
         <meta property="og:description" content="Trusted Portland auto repair shop with ASE certified mechanics. Honest pricing, same-day service." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tuansautoservice.com" />
+        <meta property="og:url" content="https://bestautorepairpdx.com" />
         <meta property="og:image" content="/logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Auto Repair - Portland Auto Repair" />
         <meta name="twitter:description" content="Trusted Portland auto repair shop with ASE certified mechanics." />
-        <link rel="canonical" href="https://tuansautoservice.com" />
+        <link rel="canonical" href="https://bestautorepairpdx.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

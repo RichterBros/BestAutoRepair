@@ -11,7 +11,7 @@ export default function ReviewsPage() {
     "@type": "AutoRepair",
     "name": "Best Auto Repair",
     "description": "See recent work, customer stories, our promise, and how to get in touch.",
-    "url": "https://rzgarage.com/reviews",
+    "url": "https://bestautorepairpdx.com/reviews",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4222 NE Martin Luther King Jr Blvd",
@@ -32,9 +32,9 @@ export default function ReviewsPage() {
         <meta property="og:title" content="Our Work & Customer Stories | Best Auto Repair Portland" />
         <meta property="og:description" content="See recent work, customer stories, and our promise. Family-owned auto repair in Portland since 1998." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://rzgarage.com/reviews" />
+        <meta property="og:url" content="https://bestautorepairpdx.com/reviews" />
         <meta property="og:image" content="/logo.png" />
-        <link rel="canonical" href="https://rzgarage.com/reviews" />
+        <link rel="canonical" href="https://bestautorepairpdx.com/reviews" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

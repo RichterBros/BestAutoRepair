@@ -39,7 +39,7 @@ export default function ContactPage() {
     name: "Best Auto Repair",
     description:
       "Contact Best Auto Repair for all your automotive repair needs in Portland, OR. ASE certified mechanics, honest pricing, same-day service.",
-    url: "https://rzgarage.com/contact",
+    url: "https://bestautorepairpdx.com/contact",
     address: {
       "@type": "PostalAddress",
       streetAddress: "4222 NE Martin Luther King Jr Blvd",
@@ -213,9 +213,9 @@ export default function ContactPage() {
           content="Contact Best Auto Repair in Portland, OR. ASE certified mechanics, honest pricing, same-day service."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://rzgarage.com/contact" />
+        <meta property="og:url" content="https://bestautorepairpdx.com/contact" />
         <meta property="og:image" content="/logo.png" />
-        <link rel="canonical" href="https://rzgarage.com/contact" />
+        <link rel="canonical" href="https://bestautorepairpdx.com/contact" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

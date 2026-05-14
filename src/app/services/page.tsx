@@ -9,7 +9,7 @@ export default function ServicesPage() {
     "@type": "AutoRepair",
     "name": "Best Auto Repair",
     "description": "Complete auto repair and maintenance services in Portland, OR. Oil changes, brake repair, engine diagnostics, transmission service, and more.",
-    "url": "https://rzgarage.com/services",
+    "url": "https://bestautorepairpdx.com/services",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4222 NE Martin Luther King Jr Blvd",
@@ -64,9 +64,9 @@ export default function ServicesPage() {
         <meta property="og:title" content="Auto Repair Services Portland | Best Auto Repair" />
         <meta property="og:description" content="Complete auto repair services in Portland, OR. Oil changes, brake repair, engine diagnostics, and more." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://rzgarage.com/services" />
+        <meta property="og:url" content="https://bestautorepairpdx.com/services" />
         <meta property="og:image" content="/logo.png" />
-        <link rel="canonical" href="https://rzgarage.com/services" />
+        <link rel="canonical" href="https://bestautorepairpdx.com/services" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
