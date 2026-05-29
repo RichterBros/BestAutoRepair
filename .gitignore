@@ -37,3 +37,6 @@ Thumbs.db
 
 # Platform
 .vercel/
+
+# Local Netlify folder
+.netlify
