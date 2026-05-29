@@ -331,7 +331,7 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-gray-900"
                     placeholder="Your full name"
                   />
                 </div>
@@ -351,7 +351,7 @@ export default function ContactPage() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-gray-900"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -371,7 +371,7 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-gray-900"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -391,28 +391,30 @@ export default function ContactPage() {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none text-gray-900"
                     placeholder="Tell us about your automotive service needs..."
                   />
                 </div>
 
                 {/* Submit Button */}
                 <div className="flex justify-end">
-                  <span className="btn-wrapper">
-                    <button
-                      type="submit"
-                      disabled={
-                        isSubmitting || (isRecaptchaEnabled && !recaptchaLoaded)
-                      }
-                      className={`font-bold py-3 px-8 transition-colors btn-angled ${
-                        isSubmitting || (isRecaptchaEnabled && !recaptchaLoaded)
-                          ? "opacity-50 cursor-not-allowed"
-                          : ""
-                      }`}
-                    >
-                      {isSubmitting ? "Sending..." : "Submit"}
-                    </button>
-                  </span>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting || (isRecaptchaEnabled && !recaptchaLoaded)}
+                    className={`font-bold py-3 px-8 text-white hover:brightness-110 transition-all duration-200 ${
+                      isSubmitting || (isRecaptchaEnabled && !recaptchaLoaded)
+                        ? "opacity-50 cursor-not-allowed"
+                        : ""
+                    }`}
+                    style={{
+                      borderRadius: 5,
+                      border: '3px solid #c46927',
+                      background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)',
+                      clipPath: 'none',
+                    }}
+                  >
+                    {isSubmitting ? "Sending..." : "Submit"}
+                  </button>
                 </div>
 
                 {/* reCAPTCHA Notice */}
