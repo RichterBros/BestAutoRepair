@@ -153,12 +153,16 @@ export default function ReviewsPage() {
             <h2 className="text-3xl font-bold mb-4">Ready to get your car running like new?</h2>
             <p className="text-xl text-gray-300 mb-8">Call now or schedule service online — we’ll take it from here.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <span className="btn-wrapper">
-                <a href="tel:+15032875715" className="font-bold py-3 px-8 transition-colors btn-angled">CALL (503) 287-5715</a>
-              </span>
-              <span className="btn-wrapper">
-                <a href="/contact" className="font-bold py-3 px-8 transition-colors btn-angled">SCHEDULE SERVICE</a>
-              </span>
+              <a
+                href="tel:+15032875715"
+                className="inline-block font-bold py-3 px-8 text-white hover:brightness-110 transition-all duration-200"
+                style={{ borderRadius: 5, border: '3px solid #c46927', background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)' }}
+              >CALL (503) 287-5715</a>
+              <a
+                href="/contact"
+                className="inline-block font-bold py-3 px-8 text-white hover:brightness-110 transition-all duration-200"
+                style={{ borderRadius: 5, border: '3px solid #c46927', background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)' }}
+              >SCHEDULE SERVICE</a>
             </div>
           </div>
         </section>

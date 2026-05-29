@@ -62,15 +62,29 @@ export default async function BlogPagedPage({ params }: { params: Params }) {
           {/* Pagination controls */}
           <div className="flex items-center justify-center gap-4 mt-10">
             {page > 1 ? (
-              <span className="btn-wrapper"><Link href={`/blog/page/${page - 1}`} className="px-3 py-2 btn-angled hover:opacity-80">Previous</Link></span>
+              <Link
+                href={`/blog/page/${page - 1}`}
+                className="inline-block font-bold py-2 px-6 text-white hover:brightness-110 transition-all duration-200"
+                style={{ borderRadius: 5, border: '3px solid #c46927', background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)' }}
+              >Previous</Link>
             ) : (
-              <span className="btn-wrapper"><span className="px-3 py-2 btn-angled opacity-50 cursor-not-allowed">Previous</span></span>
+              <span
+                className="inline-block font-bold py-2 px-6 text-white opacity-50 cursor-not-allowed"
+                style={{ borderRadius: 5, border: '3px solid #c46927', background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)' }}
+              >Previous</span>
             )}
             <span className="opacity-80 text-sm">Page {page} of {totalPages || 1}</span>
             {totalPages && page < totalPages ? (
-              <span className="btn-wrapper"><Link href={`/blog/page/${page + 1}`} className="px-3 py-2 btn-angled hover:opacity-80">Next</Link></span>
+              <Link
+                href={`/blog/page/${page + 1}`}
+                className="inline-block font-bold py-2 px-6 text-white hover:brightness-110 transition-all duration-200"
+                style={{ borderRadius: 5, border: '3px solid #c46927', background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)' }}
+              >Next</Link>
             ) : (
-              <span className="btn-wrapper"><span className="px-3 py-2 btn-angled opacity-50 cursor-not-allowed">Next</span></span>
+              <span
+                className="inline-block font-bold py-2 px-6 text-white opacity-50 cursor-not-allowed"
+                style={{ borderRadius: 5, border: '3px solid #c46927', background: 'linear-gradient(to bottom, #5f7c8a, #3f5e6b)' }}
+              >Next</span>
             )}
           </div>
         </>
