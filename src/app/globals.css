@@ -611,6 +611,13 @@ html:not(.ready) .hero-heading-slide-in-right {
   color: inherit !important;
 }
 
+/* Modal close button — exempt from global button styles */
+.modal-close {
+  background: transparent !important;
+  clip-path: none !important;
+  padding: 0 !important;
+}
+
 /* Button variant: notches at upper-left and lower-right; smaller notch size */
 button:not(.nav-hamburger),
 [type="button"],

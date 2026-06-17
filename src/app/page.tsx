@@ -328,12 +328,12 @@ export default function Home() {
               <div className="mb-6 card-shield-frame" style={{ borderRadius: '5px 5px 0 0', overflow: 'hidden' }}>
                 <div className="card-shield overflow-hidden fade-in-trigger relative h-48">
                   <Image
-                    src="/porsche.jpg"
+                    src="/mechanics_shop_web_optimized.webp"
                     alt="Toyota Land Cruiser - Repair and Maintenance"
                     fill
                     sizes="100vw"
                     className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
-                    onClick={() => setSelectedImage("/porsche.jpg")}
+                    onClick={() => setSelectedImage("/mechanics_shop_web_optimized.webp")}
                   />
                 </div>
               </div>
@@ -368,12 +368,12 @@ export default function Home() {
               <div className="mb-6 card-shield-frame" style={{ borderRadius: '5px 5px 0 0', overflow: 'hidden' }}>
                 <div className="card-shield overflow-hidden fade-in-trigger delay-1000 relative h-48">
                   <Image
-                    src="/engine_out.jpg"
+                    src="/shop-exterior copy.png"
                     alt="Best Auto Repair Shop"
                     fill
                     sizes="100vw"
                     className="object-cover cursor-pointer hover:opacity-50 transition-opacity glow-magenta"
-                    onClick={() => setSelectedImage("/engine_out.jpg")}
+                    onClick={() => setSelectedImage("/shop-exterior copy.png")}
                   />
                 </div>
               </div>
@@ -456,10 +456,10 @@ export default function Home() {
     {/* Image Modal */}
     {selectedImage && (
       <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-        <div className="relative max-w-4xl max-h-full">
+        <div className="relative max-w-4xl max-h-full" style={{ transform: 'scale(0.75)', transformOrigin: 'center center' }}>
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute -top-12 right-0 text-white text-4xl font-bold hover:text-gray-300 transition-colors z-10"
+            className="modal-close absolute -top-12 right-0 text-white text-4xl font-bold hover:text-gray-300 transition-colors z-10"
           >
             ×
           </button>
