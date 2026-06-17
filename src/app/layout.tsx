@@ -127,7 +127,7 @@ export default function RootLayout({
               <div className="container mx-auto px-4">
                 <div className="flex justify-center">
                   <div className="text-sm" style={{ color: 'rgb(255, 255, 255)' }}>
-                    <span>© 2025 Best Auto Repair. All rights reserved. // Site by Richter Bros. Media</span>
+                    <span>© 2025 Best Auto Repair. All rights reserved. // Site by <a href="https://richterbrosmedia.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Richter Bros. Media</a></span>
                   </div>
                 </div>
               </div>
