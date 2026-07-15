@@ -70,7 +70,7 @@ export async function POST(request: Request): Promise<Response> {
     const { name, phone, email, message, token } = body
 
     if (!name || !email || !message) {
-      return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 })
+      return new Response(JSON.stringify({ error: 'Please fill in your name, email, and message.' }), { status: 400 })
     }
 
     const forwardedFor = request.headers.get('x-forwarded-for')
@@ -107,7 +107,7 @@ export async function POST(request: Request): Promise<Response> {
 
     if (!host || !user || !pass || !from || !to) {
       return new Response(
-        JSON.stringify({ error: 'Email transport is not configured on the server.' }),
+        JSON.stringify({ error: 'Email is not configured on the server yet. Please call us at (503) 287-5715.' }),
         { status: 500 }
       )
     }
@@ -140,11 +140,11 @@ export async function POST(request: Request): Promise<Response> {
       </div>
     `
 
-    await transporter.sendMail({ from, to, subject, text, html })
+    await transporter.sendMail({ from, to, replyTo: email, subject, text, html })
 
     return new Response(JSON.stringify({ ok: true }), { status: 200 })
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'Failed to send message' }), { status: 500 })
+    return new Response(JSON.stringify({ error: 'Failed to send message. Please try again.' }), { status: 500 })
   }
 }
 
